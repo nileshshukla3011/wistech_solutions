@@ -21,3 +21,25 @@
   -webkit-background-clip: text;
   animation: move-bg 15s linear infinite;
 }
+
+.navItems:hover {
+  text-decoration: underline;
+}
+
+.typed-out {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  font-size: 1.6rem;
+  width: 0;
+  animation: typing 5s steps(20, end) forwards infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

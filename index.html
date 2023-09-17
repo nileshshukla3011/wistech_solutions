@@ -8,6 +8,22 @@
   <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
   <title>  Wisetech Solutions </title>
+  <style>
+    .mySlides {
+      display: none;
+    }
+
+    .fade {
+      animation-name: fade;
+      animation-duration: 0s;
+    }
+
+    @keyframes fade {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -33,46 +49,38 @@
   </div>
 
 
-  <div id="Home_section"class="slideshow-container w-screen  my-8 font-semibold">
-
-    <div class="mySlides  w-full justify-center items-center ease-in duration-300 transition-all fade">
-      <img
-      src="assets/display1.jpeg"
-        class="w-11/12 rounded-lg h-[30rem] m-auto items-center">
-      <div class="text"></div>
-    </div>
-
-    <div class="mySlides  w-full   fade m-auto justify-center ease-in duration-300 transition-all items-center">
-
-      <img
-        src="assets/display2.jpeg"
-        class="w-11/12 rounded-lg h-[30rem] m-auto items-center">
-      <div class="text"></div>
-    </div>
-
-    <div class="mySlides w-full fade m-auto  justify-center ease-in duration-300 transition-all items-center">
-      <img
-        src="assets/display3.jpeg"
-        class="w-11/12 rounded-lg h-[30rem] m-auto items-center">
-      <div class="text"></div>
-    </div>
-    <div class="mySlides w-full fade m-auto  justify-center ease-in duration-300 transition-all items-center">
-      <img
-        src="assets/display4.jpeg"
-        class="w-11/12 rounded-lg h-[30rem] m-auto items-center">
-      <div class="text"></div>
-    </div>
-
+  <div class="mySlides w-full justify-center items-center ease-in duration-300 transition-all fade">
+    <img src="assets/display1.jpeg" class="w-11/12 rounded-lg h-[30rem] m-auto items-center">
+    <div class="text"></div>
   </div>
+  
+  <div class="mySlides w-full fade m-auto justify-center ease-in duration-300 transition-all items-center">
+    <img src="assets/display2.jpeg" class="w-11/12 rounded-lg h-[30rem] m-auto items-center">
+    <div class="text"></div>
+  </div>
+  
+  <div class="mySlides w-full fade m-auto justify-center ease-in duration-300 transition-all items-center">
+    <img src="assets/display3.jpeg" class="w-11/12 rounded-lg h-[30rem] m-auto items-center">
+    <div class="text"></div>
+  </div>
+  
+  <div class="mySlides w-full fade m-auto justify-center ease-in duration-300 transition-all items-center">
+    <img src="assets/display4.jpeg" class="w-11/12 rounded-lg h-[30rem] m-auto items-center">
+    <div class="text"></div>
+  </div>
+  
+  </div>
+  &nbsp;
   <div id = "Expertise_section"class="w-full align-center p-10 typed-out ">
     <h1 class="text-2xl md:text-3xl m-auto lg:text-4xl ml-[20%] font-bold italic  ">
       Transforming <span class="gradient___text___color">Spaces</span>,  Transforming <span class="gradient___text___color">lifes</span>.
     </h1>
   </div>
 
+
   <div class="w-screen  mt-5 flex justify-center items-center p-10 "><p>Best Interior Designing Services provider in Delhi, Gurgaon & Noida, ✅100% Customer Satisfaction ✅200+ Projects Done ✅High Quality Work .
     Providing full-service interior designing for home, offices, commercial buildings & complexes.
-    Known as a full-service interior design firm in Delhi/NCR. Ourr service area includes Delhi, Noida, Gurgaon & We also offer services to all over India depends on client requirement.<br>
+    Known as a full-service interior design firm in Delhi/NCR. Our service area includes Delhi, Noida, Gurgaon & We also offer services to all over India depends on client requirement.<br>
   </p></div>
   <div class="text-center w-screen"> <h3 class="text-3xl font-bold animate-pulse">Call us now :- +91-9267945416</h3> </div>
   <br>
@@ -87,7 +95,7 @@
     <div class="container bg-gray-200 rounded-3xl flex flex-col md:flex-row p-10 items-center">
       <div class="lg:w-1/2 md:w-1/2 md:h-1/2 mr-0 md:mr-36 w-full md:w-[25rem] mb-10 md:mb-0">
         <img class="object-cover object-center rounded-3xl w-[500px] h-[500px]" alt="hero"
-          src="https://images.unsplash.com/photo-1690619488902-a5beb23189d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+        src="about.JPG"
           class="">
       </div>
       <div  class="lg:w-1/2 md:w-1/2 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
@@ -351,7 +359,7 @@
             <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
           </svg>
         </a>
-        <a href="" class="ml-3 text-white">
+        <a href="https://www.linkedin.com/in/wisetech-solutions-1806a7280/" class="ml-3 text-white">
           <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
             class="w-5 h-5" viewBox="0 0 24 24">
             <path stroke="none"
@@ -369,25 +377,22 @@
 </body>
 <!-- script should be at the bottom -->
 <script>
-  let slideIndex = 0;
+  var slideIndex = 0;
   showSlides();
 
   function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
+    var slides = document.getElementsByClassName("mySlides");
+    for (var i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
     }
     slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
     }
     slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    setTimeout(showSlides, 2000); // Change slide every 2 seconds
   }
+ 
 </script>
 
 </html>

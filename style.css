@@ -32,7 +32,7 @@
   white-space: nowrap;
   font-size: 1.6rem;
   width: 0;
-  animation: typing 5s steps(20, end) forwards infinite;
+  animation: typing 3.5s steps(20, end) forwards infinite;
 }
 
 @keyframes typing {
